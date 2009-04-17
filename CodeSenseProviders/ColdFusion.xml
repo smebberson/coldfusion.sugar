@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Providers map contexts in a document to possible completions. The actual completions are defined in the various CodeSense libraries, categorized using their key. A CodeSense Provider tells Espresso what CodeSense libraries are active in the current context. One of these XML files can contain many <provider> elements.
+
+-->
+<codesense>
+	
+	<!-- ColdFusion tags -->
+	<provider>
+		<selector>sourcecode.cfm - *, meta.tag.cfoutput.cfm, meta.tag.cfquery.cfm, meta.tag.any.cfm</selector>
+		<completions>com.scottmebberson.cfml.tags</completions>
+		<complete-match capture="2">(&lt;)([a-zA-Z0-9-]*)</complete-match>
+		<require-suffix>(\s|>|^)</require-suffix>
+	</provider>
+	
+</codesense>

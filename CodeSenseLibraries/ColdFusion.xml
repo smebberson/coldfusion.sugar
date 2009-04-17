@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+@description Defines ColdFusion codesense library
+@author Scott Mebberson <scott@scottmebberson.com>
+@copyright The MIT License
+
+Copyright (c) 2009
+-->
+
+<codesense version="1.0">
+    
+	<!-- Built In Support Function -->
+	
+	<set name="com.scottmebberson.cfml.tags">
+	
+		<!-- Default behavior -->
+		<behavior>
+			<append-dynamic>
+				<matched-suffix>(\scf*:)|[^:]</matched-suffix>
+				<transform-into>(?1::>$0&lt;/${completion}>)</transform-into>
+			</append-dynamic>
+		</behavior>
+	    
+	    <completion string="cfquery">
+	        <behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1:: datasource="#${1:application.dsn}#" name="$2">$0&lt;/cfquery>)</transform-into>
+				</append-dynamic>
+			</behavior>
+	    </completion>
+		
+		<completion string="cfabort" />
+		<completion string="cfajaximport" />
+		<completion string="cfajaxproxy" />
+		<completion string="cfapplet" />
+		<completion string="cfapplication" />
+		<completion string="cfargument" />
+		<completion string="cfassociate" />
+		<completion string="cfbreak" />
+		<completion string="cfcache" />
+		<completion string="cfcalendar" />
+		<completion string="cfcase" />
+		<completion string="cfcatch" />
+		<completion string="cfchart" />
+		<completion string="cfchartdata" />
+		<completion string="cfchartseries" />
+		<completion string="cfcol" />
+		<completion string="cfcollection" />
+		<completion string="cfcomponent" />
+		<completion string="cfcontent" />
+		<completion string="cfcookie" />
+		<completion string="cfdbinfo" />
+		<completion string="cfdefaultcase" />
+		<completion string="cfdirectory" />
+		<completion string="cfdiv" />
+		<completion string="cfdocument" />
+		<completion string="cfdocumentitem" />
+		<completion string="cfdocumentsection" />
+		<completion string="cfdump" />
+		<completion string="cfelse" />
+		<completion string="cfelseif" />
+		<completion string="cferror" />
+		<completion string="cfexchangecalendar" />
+		<completion string="cfexchangeconnection" />
+		<completion string="cfexchangefilter" />
+		<completion string="cfexchangemail" />
+		<completion string="cfexchangetask" />
+		<completion string="cfexecute" />
+		<completion string="cfexit" />
+		<completion string="cffeed" />
+		<completion string="cffile" />
+		<completion string="cfflush" />
+		<completion string="cfform" />
+		<completion string="cfformgroup" />
+		<completion string="cfformitem" />
+		<completion string="cfftp" />
+		
+		
+    </set>
+	
+</codesense>
