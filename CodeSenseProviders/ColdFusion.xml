@@ -8,7 +8,7 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 	
 	<!-- ColdFusion tags -->
 	<provider>
-		<selector>sourcecode.cfm - *, meta.tag.cfoutput.cfm, meta.tag.cfquery.cfm, meta.tag.any.cfm</selector>
+		<selector>sourcecode.cfm - *, meta.tag.self-closing.cfm, meta.tag.cfoutput.cfm, meta.tag.cfquery.cfm, meta.tag.any.cfm</selector>
 		<completions>com.scottmebberson.cfml.tags</completions>
 		<complete-match capture="2">(&lt;)([a-zA-Z0-9-]*)</complete-match>
 		<require-suffix>(\s|>|^)</require-suffix>
