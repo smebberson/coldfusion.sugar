@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
 
-    <language id="com.mondaybynoon.ColdFusion">
+    <language id="com.scottmebberson.ColdFusion">
         
         <!-- Define what syntax this language should use -->
         <!-- Note: root-zone will be deprecated in the next beta 
@@ -28,16 +28,16 @@
 		        ColdFusion
 		    </name>
 		    <description>
-		        ColdFusion.sugar for Espresso.
+		        ColdFusion Sugar for Espresso.
 		    </description>
 		    <author>
-		        Jonathan Christopher
+		        Jonathan Christopher, Scott Mebberson
 		    </author>
 		    <identifier>
-		        com.mondaybynoon.Sugar.ColdFusion
+		        com.scottmebberson.sugar.ColdFusion
 		    </identifier>
 		    <version status="preview">
-		        1.0b1
+		        0.1
 		    </version>
 		</meta>
 		
