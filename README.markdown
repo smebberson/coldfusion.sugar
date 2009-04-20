@@ -1,7 +1,7 @@
 
 ## ColdFusion.sugar
 
-> Version 0.1
+> Version 0.2
 
 ## Contributors
 
@@ -15,7 +15,8 @@ I'm always looking for suggestions and ideas for improving the sugar. Please sen
 
 ## Features
 * Syntax Highlighting (thanks Jonathan!)
-* Basic code hinting for _all_ ColdFusion (8) tags
+* Basic code hinting for _all_ tags (ColdFusion 8)
+* Tag attribute hinting for _some_ tags
 * Support for self-closing ColdFusion tags: cfabort, cfset
 * Attribute support: cfloop, cfquery
 

@@ -14,4 +14,13 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 		<require-suffix>(\s|>|^)</require-suffix>
 	</provider>
 	
+	<!-- HTML attributes -->
+	<provider>
+		<selector>meta.tag.any.cfm:has-child(name:capture(tag))</selector>
+		<completions>com.scottmebberson.cfml.tag.${tag}.attributes</completions>
+		<complete-match capture="2">(\s)([a-zA-Z0-9-]*)</complete-match>
+		<require-suffix>(\s|=|>|^)</require-suffix>
+	</provider>
+
+	
 </codesense>

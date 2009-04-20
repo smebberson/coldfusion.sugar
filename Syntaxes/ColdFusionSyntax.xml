@@ -49,36 +49,22 @@
                 </zone>
             </subzones>
         </zone>
-        
-        <!-- zone name="meta.tag.any.cfm">
-            <starts-with>
-                <expression>(&lt;)(cf)([a-zA-Z0-9]+)</expression>
-                <capture number="1" name="entity.name.tag.cfm"/>
-            </starts-with>
-            <ends-with>
-                <expression>(/?)(>)</expression>
-            </ends-with>
-            <subzones>
-                <include collection="tag-stuff"/>
-            </subzones>
-        </zone -->
 
 		<zone name="meta.tag.self-closing.cfm">
 			<starts-with>
-				<expression>(&lt;)(cfset|cfargument|cfreturn)</expression>
+				<expression>(&lt;)(cfabort|cfset|cfargument|cfreturn)</expression>
 				<capture number="1" name="punctuation.definition.begin"/>
 				<capture number="2" name="entity.name.tag.cfm"/>
 			</starts-with>
 			<ends-with>
 				<expression>(/?)(>)</expression>
-				<!-- capture number="1" name="punctuation.definition.end.self-closing"/>
-				<capture number="2" name="punctuation.definition.end"/ -->
+				<capture number="1" name="punctuation.definition.end.self-closing"/>
+				<capture number="2" name="punctuation.definition.end"/>
 			</ends-with>
 			<subzones>
 				<include collection="tag-stuff"/>
 			</subzones>
 		</zone>
-
         
         <zone name="meta.tag.any.cfm">
             <starts-with>
