@@ -41,6 +41,15 @@ Copyright (c) 2009
 	    
 	    
 	    <!-- Self closing tags -->
+	    <completion string="cfelse">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*:)|[^:]</matched-suffix>
+					<transform-into>(?1::${1: }$2>$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	    
 	    <completion string="cfabort">
 			<behavior>
 				<append-dynamic>
@@ -59,7 +68,6 @@ Copyright (c) 2009
 			</behavior>
 		</completion>
 		
-		<completion string="cfabort" />
 		<completion string="cfajaximport" />
 		<completion string="cfajaxproxy" />
 		<completion string="cfapplet" />
@@ -87,7 +95,6 @@ Copyright (c) 2009
 		<completion string="cfdocumentitem" />
 		<completion string="cfdocumentsection" />
 		<completion string="cfdump" />
-		<completion string="cfelse" />
 		<completion string="cfelseif" />
 		<completion string="cferror" />
 		<completion string="cfexchangecalendar" />
@@ -132,7 +139,6 @@ Copyright (c) 2009
 		<completion string="cflogin" />
 		<completion string="cfloginuser" />
 		<completion string="cflogout" />
-		<completion string="cfloop" />
 		<completion string="cfmail" />
 		<completion string="cfmailparam" />
 		<completion string="cfmailpart" />
@@ -170,7 +176,6 @@ Copyright (c) 2009
 		<completion string="cfscript" />
 		<completion string="cfsearch" />
 		<completion string="cfselect" />
-		<completion string="cfset" />
 		<completion string="cfsetting" />
 		<completion string="cfsilent" />
 		<completion string="cfslider" />
