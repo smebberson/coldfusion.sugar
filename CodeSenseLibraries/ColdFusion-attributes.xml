@@ -83,6 +83,109 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="username" />
 	</set>
 	
+	<set name="com.scottmebberson.cfml.tag.cfcalendar.attributes">
+		<completion string="name" />
+		<completion string="dayNames" />
+		<completion string="disabled" />
+		<completion string="enabled" />
+		<completion string="endRange" />
+		<completion string="firstDayOfWeek" />
+		<completion string="height" />
+		<completion string="mask" />
+		<completion string="monthNames" />
+		<completion string="onBlur" />
+		<completion string="onChange" />
+		<completion string="onFocus" />
+		<completion string="selectedDate" />
+		<completion string="startRange" />
+		<completion string="style" />
+		<completion string="tooltip" />
+		<completion string="visible" />
+		<completion string="width" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcase.attributes">
+		<completion string="value" />
+		<completion string="delimiters" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcatch.attributes">
+		<completion string="type" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfchart.attributes">
+		<completion string="backgroundColor" />
+		<completion string="chartHeight" />
+		<completion string="chartWidth" />
+		<completion string="dataBackgroundColor" />
+		<completion string="font" />
+		<completion string="fontBold" />
+		<completion string="fontItalic" />
+		<completion string="fontSize" />
+		<completion string="foregroundColor" />
+		<completion string="format" />
+		<completion string="gridlines" />
+		<completion string="labelFormat" />
+		<completion string="markerSize" />
+		<completion string="name" />
+		<completion string="pieSliceStyle" />
+		<completion string="scaleFrom" />
+		<completion string="scaleTo" />
+		<completion string="seriesPlacement" />
+		<completion string="show3D" />
+		<completion string="showBorder" />
+		<completion string="showLegend" />
+		<completion string="showMarkers" />
+		<completion string="showXGridlines" />
+		<completion string="showYGridlines" />
+		<completion string="sortXAxis" />
+		<completion string="style" />
+		<completion string="title" />
+		<completion string="tipbgcolor" />
+		<completion string="tipStyle" />
+		<completion string="url" />
+		<completion string="xAxisTitle" />
+		<completion string="xAxisType" />
+		<completion string="xOffset" />
+		<completion string="yAxisTitle" />
+		<completion string="yAxisType" />
+		<completion string="yOffset" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfchartdata.attributes">
+		<completion string="item" />
+		<completion string="value" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfchartseries.attributes">
+		<completion string="type" />
+		<completion string="itemColumn" />
+		<completion string="valueColumn" />
+		<completion string="colorlist" />
+		<completion string="dataLabelStyle" />
+		<completion string="markerStyle" />
+		<completion string="paintStyle" />
+		<completion string="query" />
+		<completion string="seriesColor" />
+		<completion string="seriesLabel" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcol.attributes">
+		<completion string="header" />
+		<completion string="text" />
+		<completion string="align" />
+		<completion string="width" />
+	</set>
+	
+	<set name="com.scottmebberson.cfml.tag.cfcollection.attributes">
+		<completion string="action" />
+		<completion string="categories" />
+		<completion string="collection" />
+		<completion string="language" />
+		<completion string="name" />
+		<completion string="path" />
+	</set>
+	
 	<set name="com.scottmebberson.cfml.tag.cfloop.attributes">
 		<completion string="index" />
 		<completion string="from" />
